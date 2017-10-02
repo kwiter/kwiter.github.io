@@ -1,0 +1,135 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav {
+  height: 50px;
+  line-height: 50px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*Post*/
+#post::before {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    background-image: url("../images/blog/back.jpg");
+}
+
+.mdl-mini-footer {
+  margin-top: 80px;
+  height: 120px;
+  padding: 40px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  background-color: teal;
+  box-sizing: border-box;
+}
+
+#entry {
+    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+
+.minilogo {
+  width: 5em;
+  height: 5em;
+  background-image: url('../images/logos/spark.ico');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+ 
+}
+
+// Class for when element is above threshold
+  .pin-top {
+    position: relative;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
+
+  // Class for when element is pinned
+  .pinned {
+    position: fixed !important;
+  }
+
+figcaption {
+	line-height: .75;
+}
+
+figure > a {
+	display: inline-block; 
+	height: 0;
+}
+
+.transparentBG {
+  background-color: rgba(0,0,0,0.4);
+}

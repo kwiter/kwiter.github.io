@@ -1,0 +1,14 @@
+permalink: /:categories/:title/
+url: "kwiter.github.io"
+full_name: "M.C.Kwit"
+first_name: "Matthew"
+last_name: "Kwit"
+blog_title: "Kwiter Blog"
+author_img_name_path: "/images/users/user.jpg"
+disqus_shortname: "example"
+copyright_year: "2016"
+google_analytics_code: ""
+aboutme: "Data Science"
+markdown: kramdown
+twitter_username: "kwiter"
+blog_url: "kwiter.github.io"

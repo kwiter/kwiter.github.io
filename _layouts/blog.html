@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+{% include head.html %}      
+    
+</head>
+
+<body id="post">
+    
+<!-- NavBar -->    
+{% include navBar.html %}
+    
+<!-- Body -->
+<div class="row">
+<div class="col m1"></div>
+<div class="col s12 m10" id="entry">
+  <h1 id='page-title' class="white-text text-lighten-2" style="margin: 0;">{{page.title}}</h1>
+    
+  <div class="white">
+
+   <div class="row valign-wrapper" style="margin-bottom: 0;">
+        <div class="col s6">
+                <strong>{{page.author}}</strong>
+                <span>{{page.date | date: "%B %e, %Y"}}</span>
+        </div>
+        <div class="col s6" >
+        <ul class="tag-list right-align">
+        {% for tag in page.tags %}
+        <li style="display: inline;">
+            <a class="tag" href="/tag/{{ tag }}"><div class="chip">{{ tag }}</div></a>
+        </li>
+        {% endfor %}
+        </ul>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+
+  <div class="row">   
+      <div class="col m1"></div>
+      <div class="col s12 m10 flow-text">
+          {{content}}
+      </div>
+      <div class="col m1"></div>
+  </div>
+    </div>
+    </div>
+    <div class="col m1"></div>
+    </div>
+    
+    
+<!-- Buttons-->
+ {% include share.html %}    
+    
+<!-- Footer -->
+<footer class="page-footer grey darken-4" style="padding: 0;">
+    <div class="footer-copyright">
+      <div class="container center-align">
+      &copy; <a class="white-text" href="http://mckwit.gitlab.io">kwiter</a>
+      </div>
+    </div>
+  </footer>
+    
+  <!--  Scripts-->
+  {% include script.html %} 
+  {% include mathjax_support.html %}
+  {% include sparkline_support.html %}  
+  
+  </body>
+</html>
