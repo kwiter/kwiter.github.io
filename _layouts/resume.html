@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of M.C.Kwit</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+        
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363020;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
+
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #a49966;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #e6efe9;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #e6efe9;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #e6efe9;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #e6efe9;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #a49966;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6efe9;
+}
+
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #e6efe9;
+}
+        
+.panel-heading {
+	color: #333;
+    background: #e6efe9;
+	border-color: #ddd;
+}        
+        
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.badge {
+  margin: 0;
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+    </style>
+  </head>
+  <body>
+      
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+                <a href="{{base.url}}/index.html">
+              <img src="/images/resume/rad.png" alt="MCKwit">
+                </a>
+            </div>
+            <div id="text-header" >
+              <h1>Matthew Kwit<br><span>Data Scientist</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fa fa-user ico"></i> About</h2>
+            <p>Data scientist with experience finding useful insights in big data using machine learning and statistics. Passionate about explaining insights with custom graphics, interactive dashboards, and presenting results to groups.</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fa fa-suitcase ico"></i> Recent Experience</h2>
+              
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where"><img src="/images/resume/logoGry.png" alt="D" height="40" width="40">   Sierra Trading Post - TJX Inc. <div class="pull-right where"><font size="2"> 2016 – 2017</font></div></div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Data Scientist</div>
+                    <div class="description">
+                      Work group providing data driven insights using model innovation to synthesize forest biodiversity data. Our models were primarily Bayesian and datasets ranged from small scale field plots to large global data sets. 
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Developed statistical and visualization tools to determine the placement of dozens of multi-million dollar retail stores.</li>
+                        <li class="list-group-item">Implemented version control<em>(Git)</em> to streamline collaboration between <em>nine</em> team members</li>
+                        <li class="list-group-item">Milloins of customers tens of millioins of orders and </li>
+                        <li class="list-group-item">Wrote custom <em>C</em> and <em>GPU</em> enabled <em>R</em> functions to reduce model fitting time by over <em>100%</em></li>
+		
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                      <div class="where"><img src="/images/resume/west.png" alt="D" height="40" width="40">  Western EcoSystems Technology, Inc. <div class="pull-right where"><font size="2"> 2016</font></div> </div>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Statistician</div>
+                    <div class="description">
+                      Work group focused on mitigating the environmental impact of energy production. I primarily worked on predicting the impact of wind farms on bat and bird mortality. 
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Used surviavl, linear , hierarchical <em>state-space</em> model to predict seedling growth for over <em>10,000</em> individual from <em>20,000,000</em> measurements across <em>five</em> years </li>
+                        <li class="list-group-item">Updated older processes to include a bayesian approach that provided a more flexible output.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                      <div class="where"> <img src="/images/resume/Duke_CrestBW.png" alt="D" height="40" width="40">  Duke University  <div class="pull-right where"><font size="2"> 2011 – 2016</font> </div></div>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Research / Teaching Assistant</div>
+                    <div class="description">
+                      Work group focused on using model innovation to synthesize forest biodiversity data. Our models were primarily Bayesian and datasets ranged from small scale field plots to large global data sets. 
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Taught and developed graduate level <em>statistical modeling</em> courses</li>
+                        <li class="list-group-item">Built a Bayesian hierarchical <em>state-space</em> model to predict seedling growth for over <em>10,000</em> individual from <em>20,000,000</em> measurements across <em>five</em> years </li>
+                        <li class="list-group-item">Created a Bayesian hierarchical <em>multivariate</em> model to predict the <em>non-linear</em> response of photosynthesis</li>
+                        <li class="list-group-item">Model structure combined two measurement types into one continuous prediction which reduced sampling time by <em>80%</em></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fa fa-pagelines ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Outdoors
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">Trail Running</span>
+                <span class= "interest badge">Backpacking</span>
+		<span class= "interest badge">Nordic Skiing</span>
+	      </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+              <div class="title pull-right"></div>
+              <div class="title  pull-right"></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right"></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+<div class="title only pull-right">mcKwit+cv@gmail.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+              <div class="title only pull-right">kwiter.github.io</div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github-square fa-fw"></span></div>
+              <div class="title only pull-right">kwiter</div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+              <div class="title only pull-right">matthew kwit</div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div align="right" class="year pull-left"><img src="/images/resume/Duke_CrestBW.png" alt="D" height="40" width="30"></div>
+                <div class="description pull-right">
+                  <h3>Duke University</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> Doctorate - Quantitative Ecology</p>
+                </div>
+</li><li>
+ 		<div align="right" class="year pull-left"><img src="/images/resume/Northern_Illinois_logoBW.png" alt="D" height="40" width="30"></div>
+		<div class="description pull-right">
+                  <h3>Northern Illinois University</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> Masters - Geography</p>
+           
+                </div>
+</li><li>
+ 		<div align="right" class="year pull-left"><img src="/images/resume/IllinoisBW.png" alt="D" height="40" width="30"></div>
+		<div class="description pull-right">
+                  <h3>University of Illinois</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> Bachelors - Engineering Physics</p>
+                    
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fa fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Software and Programming Languages
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">R</span>
+                <span class= "skill badge">Python</span>
+                <span class= "skill badge">JavaScript(D3)</span>
+                <span class= "skill badge">SQL</span>
+                <span class= "skill badge">Git</span>
+                <span class= "skill badge">Linux</span>
+                <span class= "skill badge">GIS</span>
+                <span class= "skill badge">STAN</span>
+                <span class= "skill badge">JAGS</span>
+                <span class= "skill badge">HTML</span>
+                <span class= "skill badge">CSS</span>
+                <span class= "skill badge">Omniture</span>
+                <span class= "skill badge">Google Analytics</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Statistical and Machine Learning Methods
+               </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Bayes</span>
+                <span class= "skill badge">classification</span>
+                <span class= "skill badge">regression</span>
+                <span class= "skill badge">clustering</span>
+                <span class= "skill badge">tree models</span>
+                <span class= "skill badge">timeseries</span>
+                <span class= "skill badge">hierarchical models</span>
+                <span class= "skill badge">non-linear models</span>
+                <span class= "skill badge">mixture models</span>
+                <span class= "skill badge">forecasting</span>
+              </div>
+            </div>
+          </div>
+
+            
+            <!-- AWARDS -->
+          <div class="box">
+            <h2><i class="fa fa-certificate ico"></i> Distinctions</h2>
+            <ul id="awards" class="clearfix">
+            <li>
+		      <div align="center" class="year pull-left"> <i class="fa fa-book ico fa-lg"></i></div>
+                <div class="description pull-right">
+                  <h3>Author of Several Articles Including:</h3>
+                  <p> <b>Dynamic Inverse Prediction and Sensitivity Analysis With High-Dimensional Responses: Application to Climate-Change Vulnerability of Biodiversity</b></p>
+                  <p>Journal of Agricultural, Biological, and Environmental Statistics</p>
+                </div>
+                </li>
+              <li>
+                 <div align="center" class="year pull-left"> <i class="fa fa-trophy ico fa-lg"></i></div>
+                <div class="description pull-right">
+                  <h3>Won several awards for my graduate work including:</h3>
+                  <p> Outstanding Graduate Student and Thesis</p>
+                  </div>
+              </li>
+             <li>
+		      <div align="center" class="year pull-left"> <i class="fa fa-bullhorn ico fa-lg"></i></div>
+                <div class="description pull-right">
+                  <h3>Recocognized for exclence in communicating science including: </h3>
+                  <p>1st place Paper Contest National Meeting of the Associate of American Geographers</p>
+                  
+                </div>
+                </li>
+                <li>
+		      <div align="center" class="year pull-left"> <i class="fa fa-globe ico fa-lg"></i></div>
+                <div class="description pull-right">
+                  <h3>Developed data intensive coursework for several courses:</h3>
+                  <p>Analyzing Spatial Data with R for the National Ecological Observatory Network and Data Carpentry</p>
+                  
+                </div>
+                </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- JQUERY -->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>
+
